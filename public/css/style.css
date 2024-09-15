@@ -1,0 +1,77 @@
+
+/* body{
+    background-color: rgb(240, 215, 167);
+} */
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+        color:#222222 !important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    display:flex;
+    height:8rem;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+
+}
+.f-info-links,.f-info-social,.f-info-brand{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.f-info-social i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-info{
+    text-align: center;
+}.card{
+    border:none !important;
+    margin-bottom: 2rem;
+    width: 100%;
+    
+
+}
+.card-img-top{
+    border-radius: 1rem !important;
+}
+.card-body{
+    padding: 0 !important;
+    
+
+}
+.card-text p{
+    font-weight:400;
+
+
+}
+.fa-heart{
+    color :black;
+    margin-left: 240px;
+    
+}
+/* .card-img-overlay{
+    opacity: 0;
+} */
+.card-img-overlay:hover{
+    opacity: 0.2;   
+
+}
