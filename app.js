@@ -44,7 +44,7 @@ app.get("/",(req,res)=>{
     res.render("listings/new");
   });
     // create ROUTE
-  app.post("/listing", async (req, res) => {
+  app.post("/listing/new", async (req, res) => {
     let{ title,description,price,country,location}=req.body;
     const addedListing = new Listing({
       title,
@@ -55,6 +55,7 @@ app.get("/",(req,res)=>{
   });
 
    await addedListing.save();
+   console.log("new Listing added");
    res.redirect("/listing");
       
   });
