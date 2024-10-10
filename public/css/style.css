@@ -1,7 +1,14 @@
 
-/* body{
-    background-color: rgb(240, 215, 167);
-} */
+body{
+    font-family: "Plus Jakarta Sans",sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.container{
+    flex:1;
+}
 .navbar{
     height:5rem;
     background-color: white;
@@ -43,12 +50,11 @@
 }
 .f-info{
     text-align: center;
-}.card{
+}
+.card{
     border:none !important;
     margin-bottom: 2rem;
     width: 100%;
-    
-
 }
 .card-img-top{
     border-radius: 1rem !important;
@@ -74,4 +80,16 @@
 .card-img-overlay:hover{
     opacity: 0.2;   
 
+}
+.footer{
+    border: 2px solid red;
+}
+.add-btn{
+    background-color: #fe424d;
+    border: none !important;
+
+}
+/* show page */
+.show-img{
+    height:30vh;
 }

@@ -1,20 +1,53 @@
 <%- layout("/layouts/boilerplate") %>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2>Create a new Listing</h2>
+            <form method="POST" action="/listing/new" novalidate class="needs-validation">
+                <!-- Title -->
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input name="title" placeholder="Enter Title" type="text" class="form-control" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
 
-<body>
-    <h2>Create a new Listing</h2>
-    <form method="POST" action="/listing/new ">
-        <la
-        <input name="title" placeholder="Enter Title" type="text" required />
-        <br><br>
-        <textarea name="description" placeholder="Enter Description" required></textarea>
-        <br><br>
-        <input name="price" placeholder="Enter Price" type="number" required />
-        <br><br>
-        <input name="location" placeholder="Enter Location" type="text" required />
-        <br><br>
-        <input name="country" placeholder="Enter Country" type="text" required />
-        <br><br>
-        <button type="submit">Submit</button>
-    </form>
-</body>
+                <br>
+                <!-- Description -->
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description" placeholder="Enter Description" class="form-control" required></textarea>
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
 
+                <br>
+                <!-- Price and Country -->
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input name="price" placeholder="Enter Price" type="number" class="form-control" required />
+                        <div class="invalid-feedback">Please provide a valid Price.</div>
+                    </div>
+
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="country" placeholder="Enter Country" type="text" class="form-control" required />
+                        <div class="invalid-feedback">Please provide a valid Country.</div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- Location -->
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input name="location" placeholder="Enter Location" type="text" class="form-control" required />
+                    <div class="invalid-feedback">Please provide a valid Location.</div>
+                </div>
+
+                <br><br>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-dark add-btn">Submit</button>
+                <br><br>
+            </form>
+        </div>
+    </div>
+</div>

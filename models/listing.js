@@ -5,10 +5,13 @@ const schema=mongoose.Schema;
 const listingSchema=new schema({
     title:{
         type:String,
-        required:true,
+       required:true,
     },
 
-    description:String,
+    description:{
+        type:String,
+        required:true,
+    },
     image:{
         filename:{
             type:String,// isko required =true raklhna hai wrna usser image nhin dega formm k time bhuinddalna h 
@@ -23,10 +26,10 @@ const listingSchema=new schema({
        
         //set:(v)=>v===""?"https://unsplash.com/photos/a-lush-green-forest-filled-with-lots-of-trees-fWBZ9r4vO9M" : v,
     },
+  price: { type: Number, required: true },
+  country: { type: String, required: true },
+  location: { type: String, required: true },
 
-    price:Number,
-    location:String,
-    country:String,
 
 });
 const Listing=mongoose.model("Listing",listingSchema);
